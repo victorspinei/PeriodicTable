@@ -1,8 +1,11 @@
 const express = require('express');
+const cors = require('cors');
 const fs = require('fs').promises;
 
 const app = express();
 const port = 3000;
+
+app.use(cors()); // Enable CORS for all routes
 
 let jsonData; // Declare a variable to store the data
 
