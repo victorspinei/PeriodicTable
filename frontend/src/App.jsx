@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <Element symbol={"O"}/>
+      <Element symbol={"K"}/>
     </>
   );
 }

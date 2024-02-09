@@ -28,17 +28,37 @@
 }
 
 .element {
-
+  border: 2px solid var(--text);  
+  height: 115px;
+  width: 90px;
+  padding: 4px;
+  position: relative;
+  text-align: center;
+  margin: 0.3rem;
+  font-weight: 700;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 200ms;
 }
-.element-symbol {
 
+.element:hover , .element:focus {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.element-symbol {
+  font-size: 2.85rem;
+  margin: 0.1rem 0;
 }
 .element-number {
-
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  font-size: 0.9rem;
 }
-.element-weight {
-
-}
-.element-name {
-
+.element-name , .element-weight {
+  font-size: 0.65rem;
+  display: block;
+  position: relative;
+  top: -10px;
 }

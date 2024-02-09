@@ -29,16 +29,16 @@ function Element({ symbol }) {
 
   return (
     <>
-      <div onClick={() => setModal(true) } className={`element ${elementData.category}`}>
-        <h2 className='element-symbol'>{symbol}</h2>
         {elementData && (
+      <div onClick={() => setModal(true) } className='element'>
+        <h2 className='element-symbol'>{symbol}</h2>
           <>
             <span className='element-number'>{elementData.atomic_number}</span>
             <span className='element-weight'>{elementData.atomic_weight}</span>
             <span className='element-name'>{elementData.name}</span>
           </>
-        )}
       </div>
+        )}
       {modal && (
         <Modal openModal={modal} closeModal={() => setModal(false)}>
           {elementData ? (
