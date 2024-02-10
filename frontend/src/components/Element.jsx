@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Modal from "./Modal.jsx";
 import "./Element.css";
+import "./Modal.css";
 import get_element from './api';
 
-function Element({ symbol }) {
+function Element({ symbol, aditionalClass }) {
   const [modal, setModal] = useState(false); 
   const [elementData, setElementData] = useState(null); 
 
-  const handleClick = async () => {
+  const initalizeElment = async () => {
     try {
       const data = await get_element(symbol);
       setElementData(data);
@@ -18,7 +19,7 @@ function Element({ symbol }) {
   };
 
   useEffect(() => {
-    handleClick()
+    initalizeElment()
   }, [])
 
   const format_key = (key) => {
@@ -30,7 +31,7 @@ function Element({ symbol }) {
   return (
     <>
         {elementData && (
-      <div onClick={() => setModal(true) } className='element'>
+      <div onClick={() => setModal(true) } className={`element ${aditionalClass}`}>
         <h2 className='element-symbol'>{symbol}</h2>
           <>
             <span className='element-number'>{elementData.atomic_number}</span>
@@ -40,11 +41,11 @@ function Element({ symbol }) {
       </div>
         )}
       {modal && (
-        <Modal openModal={modal} closeModal={() => setModal(false)}>
+        <Modal className='modal' openModal={modal} closeModal={() => setModal(false)}>
           {elementData ? (
             <div className=''>
               <section>
-                <h2>{elementData.name}</h2>
+                <h2 className='modal-name'>{elementData.name}</h2>
                 <div>
                   {elementData.atomic_number && <p>Number: {elementData.atomic_number}</p>}
                   {elementData.atomic_weight && <p>Mass: {elementData.atomic_weight}</p>}
@@ -98,6 +99,7 @@ function Element({ symbol }) {
 
 Element.propTypes = {
   symbol: PropTypes.string.isRequired,
+  aditionalClass: PropTypes.string,
 };
 
 export default Element;

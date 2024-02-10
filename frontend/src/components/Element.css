@@ -1,32 +1,3 @@
-:root {
-  --crust: #11111B;
-  --mantle: #181825;
-  --base: #1E1E2E;
-  --surface-0: #313244;
-  --surface-1: #45475A;
-  --surface-2: #585B70;
-  --overlay-0: #6C7086;
-  --overlay-1: #7f849C;
-  --overlay-2: #9399B2;
-  --subtext-0: #A6ADC8;
-  --subtext-1: #BAC2DE;
-  --text: #CDD6F4;
-  --rosewater: #F5E0DC;
-  --flamingo: #F2CDCD;
-  --pink: #F5C2E7;
-  --mauve: #CBA6F7;
-  --red: #F38BA8;
-  --maroon: #EBA0AC;
-  --peach: #FAB387;
-  --yellow: #F9E2AF;
-  --green: #A6E3A1;
-  --teal: #94E2D5;
-  --sky: #89DCEB;
-  --sapphire: #74C7EC;
-  --blue: #89B4FA;
-  --lavender: #B4BEFE;
-}
-
 .element {
   border: 2px solid var(--text);  
   height: 115px;
@@ -42,8 +13,8 @@
 }
 
 .element:hover , .element:focus {
-  border-color: var(--red);
-  color: var(--red);
+  border-color: var(--sky);
+  color: var(--sky);
 }
 
 .element-symbol {

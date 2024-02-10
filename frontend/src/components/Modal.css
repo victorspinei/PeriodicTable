@@ -1,7 +1,37 @@
 .dialog::backdrop {
-  background: #000033A0;
+  background: var(--crust);
+  opacity: .5;
 }
 
 .dialog {
-
+  background: var(--base);
+  color: var(--text);
+  position: relative;
+  transition: 200ms;
+  padding: 4px;
+  border-radius: 8px;
+  text-align: start;
 }
+
+.dialog button {
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 700;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  outline: 2px solid transparent;
+  padding: 4px;
+  border-radius: 8px;
+}
+.dialog button:hover, .dialog button:focus {
+  color: var(--red);
+}
+ .dialog button:focus {
+  outline-color: var(--red);
+}
+
+
+
+
+

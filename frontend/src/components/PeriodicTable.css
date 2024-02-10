@@ -1,0 +1,509 @@
+.periodic-table {
+  margin: 2rem auto;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+}
+
+@media (min-width: 1400px) {
+  .periodic-table {
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: .1rem;
+    grid-template-areas:
+      "H _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ He"
+      "Li Be _ _ _ _ _ _ _ _ _ _ B C N O F Ne"
+      "Na Mg _ _ _ _ _ _ _ _ _ _ Al Si P S Cl Ar"
+      "K Ca Sc _ Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr"
+      "Rb Sr Y _ Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe"
+      "Cs Ba La _ Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn"
+      "Fr Ra Ac _ Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og"
+      "_ _ _ _ Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu _"
+      "_ _ _ _ Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr _";
+  }
+
+  .H { 
+		grid-area: H;
+    /* background: var(--red); */
+  }
+  .He { 
+		grid-area: He;
+
+  }
+  .Li { 
+		grid-area: Li;
+
+  }
+  .Be { 
+		grid-area: Be;
+
+  }
+  .B { 
+		grid-area: B;
+
+  }
+  .C { 
+		grid-area: C;
+
+  }
+  .N { 
+		grid-area: N;
+
+  }
+  .O { 
+		grid-area: O;
+
+  }
+  .F { 
+		grid-area: F;
+
+  }
+  .Ne { 
+		grid-area: Ne;
+
+  }
+
+  .Na { 
+		grid-area: Na;
+
+  }
+  .Mg { 
+		grid-area: Mg;
+
+  }
+  .Al { 
+		grid-area: Al;
+
+  }
+  .Si { 
+		grid-area: Si;
+
+  }
+  .P { 
+		grid-area: P;
+
+  }
+  .S { 
+		grid-area: S;
+
+  }
+  .Cl { 
+		grid-area: Cl;
+
+  }
+  .Ar { 
+		grid-area: Ar;
+
+  }
+  .K { 
+		grid-area: K;
+
+  }
+  .Ca { 
+		grid-area: Ca;
+
+  }
+
+  .Sc { 
+		grid-area: Sc;
+
+  }
+  .Ti { 
+		grid-area: Ti;
+
+  }
+  .V { 
+		grid-area: V;
+
+  }
+  .Cr { 
+		grid-area: Cr;
+
+  }
+  .Mn { 
+		grid-area: Mn;
+
+  }
+  .Fe { 
+		grid-area: Fe;
+
+  }
+  .Co { 
+		grid-area: Co;
+
+  }
+  .Ni { 
+		grid-area: Ni;
+
+  }
+  .Cu { 
+		grid-area: Cu;
+
+  }
+  .Zn { 
+		grid-area: Zn;
+
+  }
+
+  .Ga { 
+		grid-area: Ga;
+
+  }
+  .Ge { 
+		grid-area: Ge;
+
+  }
+  .As { 
+		grid-area: As;
+
+  }
+  .Se { 
+		grid-area: Se;
+
+  }
+  .Br { 
+		grid-area: Br;
+
+  }
+  .Kr { 
+		grid-area: Kr;
+
+  }
+  .Rb { 
+		grid-area: Rb;
+
+  }
+  .Sr { 
+		grid-area: Sr;
+
+  }
+  .Y { 
+		grid-area: Y;
+
+  }
+  .Zr { 
+		grid-area: Zr;
+
+  }
+
+  .Nb { 
+		grid-area: Nb;
+
+  }
+  .Mo { 
+		grid-area: Mo;
+
+  }
+  .Tc { 
+		grid-area: Tc;
+
+  }
+  .Ru { 
+		grid-area: Ru;
+
+  }
+  .Rh { 
+		grid-area: Rh;
+
+  }
+  .Pd { 
+		grid-area: Pd;
+
+  }
+  .Ag { 
+		grid-area: Ag;
+
+  }
+  .Cd { 
+		grid-area: Cd;
+
+  }
+  .In { 
+		grid-area: In;
+
+  }
+  .Sn { 
+		grid-area: Sn;
+
+  }
+
+  .Sb { 
+		grid-area: Sb;
+
+  }
+  .Te { 
+		grid-area: Te;
+
+  }
+  .I { 
+		grid-area: I;
+
+  }
+  .Xe { 
+		grid-area: Xe;
+
+  }
+  .Cs { 
+		grid-area: Cs;
+
+  }
+  .Ba { 
+		grid-area: Ba;
+
+  }
+  .La { 
+		grid-area: La;
+
+  }
+  .Ce { 
+		grid-area: Ce;
+
+  }
+  .Pr { 
+		grid-area: Pr;
+
+  }
+  .Nd { 
+		grid-area: Nd;
+
+  }
+
+  .Pm { 
+		grid-area: Pm;
+
+  }
+  .Sm { 
+		grid-area: Sm;
+
+  }
+  .Eu { 
+		grid-area: Eu;
+
+  }
+  .Gd { 
+		grid-area: Gd;
+
+  }
+  .Tb { 
+		grid-area: Tb;
+
+  }
+  .Dy { 
+		grid-area: Dy;
+
+  }
+  .Ho { 
+		grid-area: Ho;
+
+  }
+  .Er { 
+		grid-area: Er;
+
+  }
+  .Tm { 
+		grid-area: Tm;
+
+  }
+  .Yb { 
+		grid-area: Yb;
+
+  }
+
+  .Lu { 
+		grid-area: Lu;
+
+  }
+  .Hf { 
+		grid-area: Hf;
+
+  }
+  .Ta { 
+		grid-area: Ta;
+
+  }
+  .W { 
+		grid-area: W;
+
+  }
+  .Re { 
+		grid-area: Re;
+
+  }
+  .Os { 
+		grid-area: Os;
+
+  }
+  .Ir { 
+		grid-area: Ir;
+
+  }
+  .Pt { 
+		grid-area: Pt;
+
+  }
+  .Au { 
+		grid-area: Au;
+
+  }
+  .Hg { 
+		grid-area: Hg;
+
+  }
+
+  .Tl { 
+		grid-area: Tl;
+
+  }
+  .Pb { 
+		grid-area: Pb;
+
+  }
+  .Bi { 
+		grid-area: Bi;
+
+  }
+  .Po { 
+		grid-area: Po;
+
+  }
+  .At { 
+		grid-area: At;
+
+  }
+  .Rn { 
+		grid-area: Rn;
+
+  }
+  .Fr { 
+		grid-area: Fr;
+
+  }
+  .Ra { 
+		grid-area: Ra;
+
+  }
+  .Ac { 
+		grid-area: Ac;
+
+  }
+  .Th { 
+		grid-area: Th;
+
+  }
+
+  .Pa { 
+		grid-area: Pa;
+
+  }
+  .U { 
+		grid-area: U;
+
+  }
+  .Np { 
+		grid-area: Np;
+
+  }
+  .Pu { 
+		grid-area: Pu;
+
+  }
+  .Am { 
+		grid-area: Am;
+
+  }
+  .Cm { 
+		grid-area: Cm;
+
+  }
+  .Bk { 
+		grid-area: Bk;
+
+  }
+  .Cf { 
+		grid-area: Cf;
+
+  }
+  .Es { 
+		grid-area: Es;
+
+  }
+  .Fm { 
+		grid-area: Fm;
+
+  }
+
+  .Md { 
+		grid-area: Md;
+
+  }
+  .No { 
+		grid-area: No;
+
+  }
+  .Lr { 
+		grid-area: Lr;
+
+  }
+  .Rf { 
+		grid-area: Rf;
+
+  }
+  .Db { 
+		grid-area: Db;
+
+  }
+  .Sg { 
+		grid-area: Sg;
+
+  }
+  .Bh { 
+		grid-area: Bh;
+
+  }
+  .Hs { 
+		grid-area: Hs;
+
+  }
+  .Mt { 
+		grid-area: Mt;
+
+  }
+  .Ds { 
+		grid-area: Ds;
+
+  }
+
+  .Rg { 
+		grid-area: Rg;
+
+  }
+  .Cn { 
+		grid-area: Cn;
+
+  }
+  .Nh { 
+		grid-area: Nh;
+
+  }
+  .Fl { 
+		grid-area: Fl;
+
+  }
+  .Mc { 
+		grid-area: Mc;
+
+  }
+  .Lv { 
+		grid-area: Lv;
+
+  }
+  .Ts { 
+		grid-area: Ts;
+
+  }
+  .Og { 
+		grid-area: Og;
+
+  }
+}

@@ -1,11 +1,9 @@
-import Element from './components/Element.jsx';
+import PeriodicTable from './components/PeriodicTable.jsx';
 
 function App() {
 
   return (
-    <>
-      <Element symbol={"K"}/>
-    </>
+    <PeriodicTable />
   );
 }
 
