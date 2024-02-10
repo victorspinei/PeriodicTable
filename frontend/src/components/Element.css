@@ -1,6 +1,5 @@
 .element {
-  border: 2px solid var(--text);  
-  height: 115px;
+  height: 110px;
   width: 90px;
   padding: 4px;
   position: relative;
@@ -13,8 +12,9 @@
 }
 
 .element:hover , .element:focus {
-  border-color: var(--sky);
-  color: var(--sky);
+  border-color: #fff;
+  color: #fff;
+  cursor: pointer;
 }
 
 .element-symbol {
