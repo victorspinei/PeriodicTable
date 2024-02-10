@@ -4607,6 +4607,43 @@
     }
 },
 {
+    "symbol": "Fl",
+    "name": "Flerovium",
+    "atomic_number": 114,
+    "atomic_weight": 289,
+    "electron_configuration": "[Rn] 5f¹⁴ 6d¹⁰ 7s² 7p²",
+    "group": [14, 14],
+    "period": 7,
+    "block": "p",
+    "category": "Post-transition metal",
+    "color": "Unknown, probably metallic",
+    "oxidation_states": [2],
+    "compounds_with_flerovium": ["FlO2", "FlCl2"],
+    "melting_point": "Unknown",
+    "boiling_point": "Unknown",
+    "density": "Unknown",
+    "discovery": "First synthesized by the Joint Institute for Nuclear Research (Russia) and Lawrence Livermore National Laboratory (USA) in 1999.",
+    "appearance": "Unknown, probably metallic, radioactive.",
+    "abundance": "Flerovium is a synthetic element and is not found naturally. It is produced in laboratories through nuclear reactions.",
+    "uses": [
+        "In scientific research, as flerovium is used for studying the properties of heavy elements.",
+        "Flerovium has no practical uses outside of research due to its short half-life and limited availability."
+    ],
+    "notable_properties": {
+        "electronegativity": "Unknown",
+        "ionization_energy": "Unknown",
+        "atomic_radius": "Unknown",
+        "crystal_structure": "Unknown",
+        "magnetic_properties": "Unknown",
+        "thermal_conductivity": "Unknown",
+        "specific_heat_capacity": "Unknown"
+    },
+    "biology_facts": {
+        "biological_interaction": "Flerovium has no known biological role, and its interaction with living organisms is primarily studied for potential health risks.",
+        "toxicity": "Flerovium is radioactive and poses health risks. Exposure to flerovium should be minimized, and strict safety measures are required when handling this element."
+    }
+},
+{
     "symbol": "Mc",
     "name": "Moscovium",
     "atomic_number": 115,
