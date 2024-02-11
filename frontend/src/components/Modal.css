@@ -1,6 +1,6 @@
 .dialog::backdrop {
   background: var(--crust);
-  opacity: .5;
+  opacity: .8;
 }
 
 .dialog {
@@ -8,7 +8,7 @@
   color: var(--text);
   position: relative;
   transition: 200ms;
-  padding: 4px;
+  padding: 0.5rem 2rem;
   border-radius: 8px;
   text-align: start;
 }

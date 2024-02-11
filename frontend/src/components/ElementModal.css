@@ -1,0 +1,42 @@
+.modal-name {
+  font-size: 5rem;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+  border: none;
+}
+
+.modal-basic-data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 2rem;
+  column-gap: 2rem;
+  width: 100%;
+}
+.modal-basic-data p {
+  font-weight: 700;
+}
+
+.modal-basic-data p span {
+  border: none;
+}
+
+video {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  display: inline-block;
+  max-width: 500px !important;
+}
+
+.model-extra {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+}
+
+.model-extra div {
+  font-size: 1rem;
+}
