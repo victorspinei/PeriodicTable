@@ -3,23 +3,24 @@ import PropTypes from 'prop-types';
 import Modal from "./Modal.jsx";
 import "./Element.css";
 import './ElementModal.css'
-import get_element from './api';
 
 function Element({ symbol, aditionalClass }) {
   const [modal, setModal] = useState(false); 
   const [elementData, setElementData] = useState(null); 
 
-  const initalizeElment = async () => {
-    try {
-      const data = await get_element(symbol);
-      setElementData(data);
-    } catch (error) {
-      console.error('Error fetching element:', error);
-    }
-  };
-
   useEffect(() => {
-    initalizeElment()
+    const fetchData = async () => {
+      try {
+        const response = await fetch('./src/assets/elementsV2.json');
+        const data = await response.json();
+        const foundItem = data.find(item => item.symbol === symbol);
+        if (foundItem) setElementData(foundItem);
+        else throw new Error("no element found")
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchData()
   }, [])
 
   const format_key = (key) => {
@@ -66,10 +67,10 @@ function Element({ symbol, aditionalClass }) {
                 <source src={`https://www.gstatic.com/culturalinstitute/searchar/assets/element_${formatLink()}/desktop_dark.mp4`} />
               </video>
               <div>
-                {elementData.discovery && <p>Discovery: {elementData.discovery}</p>}
-                {elementData.discovered_in && <p>Discovered in: {elementData.discovered_in}</p>}
-                {elementData.appearance && <p>Appearance: {elementData.appearance}</p>}
-                {elementData.abundance && <p>Abundance: {elementData.abundance}</p>}
+                {elementData.discovery && <p>Discovery: <span className={aditionalClass}>{elementData.discovery}</span></p>}
+                {elementData.discovered_in && <p>Discovered in: <span className={aditionalClass}>{elementData.discovered_in}</span></p>}
+                {elementData.appearance && <p>Appearance: <span className={aditionalClass}>{elementData.appearance}</span></p>}
+                {elementData.abundance && <p>Abundance: <span className={aditionalClass}>{elementData.abundance}</span></p>}
               </div>
               </section>
               <section>
