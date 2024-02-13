@@ -82,18 +82,18 @@ function Element({ symbol, aditionalClass }) {
                 </ol>
               </section>
               <section className='modal-list'>
-                <h3>Notable properties</h3>
+                <h3>Notable properties <i>🔍</i></h3>
                 <ul>
                   {elementData.notable_properties && Object.entries(elementData.notable_properties).map(([key, value], i) => (
-                    <li className={aditionalClass} key={i}>{format_key(key)}: {value}</li>
+                    <li key={i}>{format_key(key)}: <span className={aditionalClass}>{value}</span></li>
                   ))}
                 </ul>
               </section>
-              <section>
-                <h3>Biology facts</h3>
+              <section className='modal-list'>
+                <h3>Biology facts <i>🧬</i></h3>
                 <ul>
                   {elementData.biology_facts && Object.entries(elementData.biology_facts).map(([key, value], i) => (
-                    <li key={i}>{format_key(key)}: {value}</li>
+                    <li key={i}>{format_key(key)}: <span className={aditionalClass}>{value}</span></li>
                   ))}
                 </ul>
               </section>
