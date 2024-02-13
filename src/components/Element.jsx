@@ -73,19 +73,19 @@ function Element({ symbol, aditionalClass }) {
                 {elementData.abundance && <p>Abundance: <span className={aditionalClass}>{elementData.abundance}</span></p>}
               </div>
               </section>
-              <section>
-                <h3>Uses</h3>
-                <ul>
+              <section className='modal-list'>
+                <h3>Uses <i>⚙️ </i></h3>
+                <ol>
                   {elementData.uses && elementData.uses.map((v, i) => (
-                    <li key={i}>{v}</li>
+                    <li className={aditionalClass} key={i}>{v}</li>
                   ))}
-                </ul>
+                </ol>
               </section>
-              <section>
+              <section className='modal-list'>
                 <h3>Notable properties</h3>
                 <ul>
                   {elementData.notable_properties && Object.entries(elementData.notable_properties).map(([key, value], i) => (
-                    <li key={i}>{format_key(key)}: {value}</li>
+                    <li className={aditionalClass} key={i}>{format_key(key)}: {value}</li>
                   ))}
                 </ul>
               </section>
