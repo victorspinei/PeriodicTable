@@ -11,7 +11,7 @@ function Element({ symbol, aditionalClass }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('./src/assets/elementsV2.json');
+        const response = await fetch('/public/elementsV2.json');
         const data = await response.json();
         const foundItem = data.find(item => item.symbol === symbol);
         if (foundItem) setElementData(foundItem);
