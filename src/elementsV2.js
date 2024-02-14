@@ -1,4 +1,4 @@
-[
+const elements = [
   {
     "symbol": "H",
     "name": "Hydrogen",
@@ -4792,3 +4792,4 @@
     }
 }
 ]
+module.exports = elements;

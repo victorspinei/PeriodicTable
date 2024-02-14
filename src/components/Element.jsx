@@ -3,25 +3,11 @@ import PropTypes from 'prop-types';
 import Modal from "./Modal.jsx";
 import "./Element.css";
 import './ElementModal.css'
+import { elements } from '../elementsV2.js';
 
 function Element({ symbol, aditionalClass }) {
   const [modal, setModal] = useState(false); 
-  const [elementData, setElementData] = useState(null); 
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('/public/elementsV2.json');
-        const data = await response.json();
-        const foundItem = data.find(item => item.symbol === symbol);
-        if (foundItem) setElementData(foundItem);
-        else throw new Error("no element found")
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-    fetchData()
-  }, [])
+  const elementData = elements; 
 
   const format_key = (key) => {
     let formatted = key.replace(/_/g, " "); 
