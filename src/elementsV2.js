@@ -4792,4 +4792,4 @@ const elements = [
     }
 }
 ]
-module.exports = elements;
+export default elements;

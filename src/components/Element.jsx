@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import Modal from "./Modal.jsx";
 import "./Element.css";
 import './ElementModal.css'
-import { elements } from '../elementsV2.js';
+import elements from '../elementsV2.js';
 
 function Element({ symbol, aditionalClass }) {
   const [modal, setModal] = useState(false); 
-  const elementData = elements; 
+  const elementData = elements.find(item => item.symbol === symbol); 
+  console.log(elements)
 
   const format_key = (key) => {
     let formatted = key.replace(/_/g, " "); 
