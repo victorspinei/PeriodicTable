@@ -1,3 +1,6 @@
+.modal {
+  line-height: 1.5;
+}
 .modal-name {
   font-size: 5rem;
   font-weight: 700;
@@ -9,7 +12,7 @@
 .modal-basic-data {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: auto;
   margin-bottom: 2rem;
   column-gap: 2rem;
   width: 100%;
@@ -87,5 +90,29 @@ span {
     align-content: center;
     gap: 2rem;
     margin-bottom: 1rem;
+  }
+  .model-extra div p {
+    font-size: 14px;
+  }
+  .modal-name {
+    font-size: 2.5rem;
+  }
+  .modal-basic-data {
+    font-size: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    margin-bottom: 2rem;
+    column-gap: 2rem;
+    width: 100%;
+  }
+  .modal-list ol {
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .modal-list ul {
+    font-size: 16px;
+  }
+  .modal-list h3 {
+    font-size: 1.5rem;
   }
 }

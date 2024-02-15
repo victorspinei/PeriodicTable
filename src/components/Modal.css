@@ -32,3 +32,9 @@
   outline-color: var(--red);
 }
 
+
+@media (max-width: 480px) {
+  .dialog {
+    max-width: 400px;
+  } 
+}

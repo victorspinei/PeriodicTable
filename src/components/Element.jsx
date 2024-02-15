@@ -8,7 +8,6 @@ import elements from '../elementsV2.js';
 function Element({ symbol, aditionalClass }) {
   const [modal, setModal] = useState(false); 
   const elementData = elements.find(item => item.symbol === symbol); 
-  console.log(elements)
 
   const format_key = (key) => {
     let formatted = key.replace(/_/g, " "); 
@@ -22,16 +21,16 @@ function Element({ symbol, aditionalClass }) {
 
   return (
     <>
-        {elementData && (
-      <div onClick={() => setModal(true) } className={`element ${aditionalClass}`}>
-        <h2 className='element-symbol'>{symbol}</h2>
+      {elementData && (
+        <div onClick={() => setModal(true) } className={`element ${aditionalClass}`}>
+          <h2 className='element-symbol'>{symbol}</h2>
           <>
             <span className='element-number'>{elementData.atomic_number}</span>
             <span className='element-weight'>{elementData.atomic_weight}</span>
             <span className='element-name'>{elementData.name}</span>
           </>
-      </div>
-        )}
+        </div>
+      )}
       {modal && (
         <Modal className='modal' openModal={modal} closeModal={() => setModal(false)}>
           {elementData ? (
@@ -50,15 +49,15 @@ function Element({ symbol, aditionalClass }) {
                 </div>
               </section>
               <section className='model-extra'>
-              <video autoPlay={true} loop>
-                <source src={`https://www.gstatic.com/culturalinstitute/searchar/assets/element_${formatLink()}/desktop_dark.mp4`} />
-              </video>
-              <div>
-                {elementData.discovery && <p>Discovery: <span className={aditionalClass}>{elementData.discovery}</span></p>}
-                {elementData.discovered_in && <p>Discovered in: <span className={aditionalClass}>{elementData.discovered_in}</span></p>}
-                {elementData.appearance && <p>Appearance: <span className={aditionalClass}>{elementData.appearance}</span></p>}
-                {elementData.abundance && <p>Abundance: <span className={aditionalClass}>{elementData.abundance}</span></p>}
-              </div>
+                <video autoPlay={true} loop>
+                  <source src={`https://www.gstatic.com/culturalinstitute/searchar/assets/element_${formatLink()}/desktop_dark.mp4`} />
+                </video>
+                <div>
+                  {elementData.discovery && <p>Discovery: <span className={aditionalClass}>{elementData.discovery}</span></p>}
+                  {elementData.discovered_in && <p>Discovered in: <span className={aditionalClass}>{elementData.discovered_in}</span></p>}
+                  {elementData.appearance && <p>Appearance: <span className={aditionalClass}>{elementData.appearance}</span></p>}
+                  {elementData.abundance && <p>Abundance: <span className={aditionalClass}>{elementData.abundance}</span></p>}
+                </div>
               </section>
               <section className='modal-list'>
                 <h3>Uses <i>⚙️ </i></h3>
@@ -86,8 +85,8 @@ function Element({ symbol, aditionalClass }) {
               </section>
             </div>
           ) : (
-            <p>Loading...</p>
-          )}
+              <p>Loading...</p>
+            )}
         </Modal>
       )}
     </>
