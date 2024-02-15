@@ -6,7 +6,14 @@
 ![Window Mode](./public/screenshot-window.png)
 
 ## Overview
-ElementExplorer is ... TODO!
+ElementExplorer is a periodic table that will give you all of the information you need on an element when you click on it. 
 
 ## Features 
-[v] TODO!
+- Information on all elements;
+- Biology facts;
+- Notable propreties;
+- Interactive diagrams from Signal Garden;
+- General information;
+- Uses for every element;
+- All elements;
+- Much more...
